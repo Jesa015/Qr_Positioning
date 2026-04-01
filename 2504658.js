@@ -20,7 +20,9 @@ function startScanner() {
         {},
         function (text) {
             const place = JSON.parse(text);
+
             showMarkerAt(place.top, place.left);
+            showItemInfo(place); 
             toggleScanner();
         }
     ).catch(function (err) {

@@ -40,3 +40,18 @@ h1 {
     width: 100%;
 }
 
+#btn {
+    background-color: var(--theme);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#btn:hover {
+    background-color: #3a0; /* slightly lighter green */
+    transform: scale(1.05);
+}
