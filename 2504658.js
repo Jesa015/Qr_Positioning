@@ -25,8 +25,8 @@ function startScanner() {
         {},
         function (text) {
             const place = JSON.parse(text);
-            const top = place.latitude * 5 + "px";
-            const left = place.longitude * 5 + "px";
+            const top = place.latitude * 3 + "px";
+            const left = place.longitude * 3 + "px";
 
             showMarkerAt(top, left, place.name, place.latitude, place.longitude);
             toggleScanner();
